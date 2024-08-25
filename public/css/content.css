@@ -1,3 +1,4 @@
+  
 .cute-font {
     font-family: 'Baloo 2', sans-serif;
 }
@@ -5,7 +6,7 @@
 body {
     text-align: center;
     font-family: 'Baloo 2', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffeef4;
     margin: 0;
     padding: 0;
     display: flex;
@@ -79,7 +80,7 @@ header nav ul li a:active {
     padding: 20px;
     background-color: #ffeaf5;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 25px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
 }
@@ -109,13 +110,13 @@ h1 {
 }
 
 .journal-container {
+    margin-top: 20px;
     width: 70%;
     max-width: 600px;
     padding: 40px 10px;
-    margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-image: url('/css/assets/bghomecard.jpg');
+    background-image: url('/css/assets/images/bghomecard.jpg');
     border: 1px solid #ddd;
     position: relative;
     margin-bottom: 30px;
@@ -160,14 +161,14 @@ h1 {
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #ddd;
-    min-height: 300px; /* Increased min-height for better notebook feel */
+    min-height: 300px; 
     max-width: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to bottom, #f7f5f0 0%, #f7f5f0 100%);
     background-size: cover;
 }
 
-/* Notebook Pages */
+
 .left-page, .right-page {
     width: 50%;
     padding: 20px;
@@ -176,37 +177,35 @@ h1 {
     background: linear-gradient(to bottom, 
         rgba(0, 0, 0, 0.1) 1px, 
         transparent 1px);
-    background-size: 100% 30px; /* Adjust the spacing between lines */
+    background-size: 100% 30px; 
 }
 
-/* Center Line */
 .journal-center-line {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
     width: 2px;
-    background-color: #333; /* Dark line to represent binding */
+    background-color: #333; 
 }
 
-/* Entry Styles */
+
 #entry-left, #entry-right {
     text-align: left;
-    font-family: 'Georgia', serif; /* Classic font for a notebook look */
+    font-family: 'Georgia', serif; 
     line-height: 1.6;
     position: relative;
-    z-index: 1; /* Ensure text is on top of the background lines */
+    z-index: 1; 
 }
 
 .left-page {
-    border-right: 1px dashed #333; /* Dashed line on the right side of left page */
+    border-right: 1px dashed #333; 
 }
 
 .right-page {
-    border-left: none; /* No border on the left side of right page */
+    border-left: none; 
 }
 
-/* Page Navigation Buttons */
 .icon-button {
     background-color: transparent;
     border: none;

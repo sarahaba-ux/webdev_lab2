@@ -11,7 +11,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="/css/assets/logo.png" alt="Logo">
+        <img src="/css/assets/images/logo.png" alt="Logo">
     </div>
     <nav>
         <ul>
@@ -21,19 +21,6 @@
         </ul>
     </nav>
 </header>
-
-<div class="simulation-container">
-    <img src="/css/assets/mkhome.png" alt="Corner Image" class="corner-image">
-    <h1 style="color: #ba005d;">Mingkai's Day Simulation</h1>
-    <div id="scenario">
-        <p style="color: #ba005d;">Welcome to Mingkai's day! What should she do first?</p>
-    </div>
-    <div id="choices">
-        <button onclick="makeChoice(0, 0)">Stretch</button>
-        <button onclick="makeChoice(1, 0)">Eat Breakfast</button>
-        <button onclick="makeChoice(2, 0)">Play with a Toy</button>
-    </div>
-</div>
 
 <div class="journal-container">
     <h1 style="color: #e65f8c;"> ˚ʚ♡ɞ˚ </h1>
@@ -60,27 +47,40 @@
     </div>
 </div>
 
-<script style = "color: #10094">
+<div class="simulation-container">
+    <img src="/css/assets/images/mkhome.png" alt="Corner Image" class="corner-image">
+    <h1 style="color: #ba005d;">Mingkai's Day Simulation</h1>
+    <div id="scenario">
+        <p style="color: #ba005d;">Welcome to Mingkai's day! What should she do first?</p>
+    </div>
+    <div id="choices">
+        <button onclick="makeChoice(0, 0)">Stretch</button>
+        <button onclick="makeChoice(1, 0)">Eat Breakfast</button>
+        <button onclick="makeChoice(2, 0)">Play with a Toy</button>
+    </div>
+</div>
+
+<script>
     const scenarios = [
         [
-            "Mingkai stretches and feels energized for the day. What should she do next?",
-            "Mingkai eats a delicious breakfast. Now, what should she do?",
-            "Mingkai plays with her favorite toy. She's feeling playful! What's next?"
+            "Mingkai stretches and feels energized for the day. <br>What should she do next?",
+            "Mingkai eats a delicious breakfast. <br>Now, what should she do?",
+            "Mingkai plays with her favorite toy. <br>She's feeling playful! What's next?"
         ],
         [
-            "Mingkai takes a nap and feels refreshed. What should she do next?",
-            "Mingkai explores the house and finds a cozy spot by the window. What should she do next?",
-            "Mingkai interacts with Sarah and enjoys some quality time. What should she do next?"
+            "Mingkai takes a nap and feels refreshed. <br>What should she do next?",
+            "Mingkai explores the house and finds a cozy spot by the window. <br>What should she do next?",
+            "Mingkai interacts with Sarah and enjoys some quality time.<br> What should she do next?"
         ],
         [
-            "Mingkai watches the sunset and feels peaceful. What should she do next?",
-            "Mingkai listens to a story and feels relaxed. What should she do next?",
-            "Mingkai cuddles with Potpot and feels loved. What should she do next?"
+            "Mingkai watches the sunset and feels peaceful. <br>What should she do next?",
+            "Mingkai listens to a story and feels relaxed. <br>What should she do next?",
+            "Mingkai cuddles with Potpot and feels loved. <br>What should she do next?"
         ],
         [
-            "Mingkai explores the garden and finds beautiful flowers. What should she do next?",
-            "Mingkai chases butterflies and has a lot of fun. What should she do next?",
-            "Mingkai takes a nap under a tree and dreams of more adventures. What should she do next?"
+            "Mingkai explores the garden and finds beautiful flowers. <br>What should she do next?",
+            "Mingkai chases butterflies and has a lot of fun. <br>What should she do next?",
+            "Mingkai takes a nap under a tree and dreams of more adventures. <br>What should she do next?"
         ]
     ];
 
@@ -124,10 +124,15 @@
     }
 
     const entries = [
-        { title: "Day 1", content: "Today I chased a butterfly around the garden. It was fun!" },
-        { title: "Day 2", content: "Had a lazy day napping on the couch." },
-        { title: "Day 3", content: "Got a new toy mouse today! Played with it all afternoon." },
-        { title: "Day 4", content: "Went to the vet—didn't like the shots, but got treats afterward." },
+        { title: "K-Drama or Movie Time!", content: "I and Sarah loves K-dramas. We get snacks while we watch, usually our favorite ones. It’s kind of fun!" },
+        { title: "Preggy and Kittens Surprise!", content: "Tiny kittens arrived. They’re noisy but cute. My human’s very attentive." },
+        { title: "Kittens Exploring", content: "The kittens are starting to explore. They’re wobbly but curious, and it’s entertaining to watch." },
+        { title: "Meeting New Pets", content: "Met some new pets today. It’s a bit chaotic, but everyone seems to be getting along." },
+        { title: "Spaying Day", content: "Had a vet visit and feel different now. Lots of extra cuddles while I recover." },
+        { title: "New Fave Video", content: "Found a video on YouTube that Sarah shared. It’s all about rats and cockroaches! I can't stop watching!" },
+        { title: "Midnight Zoomies", content: "I decided to have midnight zoomies, and Sarah and I both got scolded because I was too noisy. Hehe!" },
+        { title: "Gift Sarah", content: "Today I decided to gift Sarah some lizards, thinking maybe she was hungry. She screamed, so I think she’s happy. :))" },
+        
     ];
 
     let currentLeftEntry = 0;
@@ -205,6 +210,15 @@
 <footer>
     <p>&copy; Mingkai's Life Website.</p>
 </footer>
+
+<audio id="background-music" src="/css/assets/audio/meowfey.mp3" preload="auto" loop></audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    });
+</script>
 
 </body> 
 </html>

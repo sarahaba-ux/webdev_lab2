@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mingkay's Life (About)</title>
+<title>Mingkai's Life (About)</title>
 <link rel="stylesheet" type="text/css" href="/css/about.css">
+
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <img src="/css/assets/logo.png" alt="Logo">
+        <img src="/css/assets/images/logo.png" alt="Logo">
     </div>
     <nav>
         <ul>
@@ -33,46 +34,53 @@
     <div class="profile-grid">
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/mk1.jfif" alt="Member 1">
+                <img src="/css/assets/images/mk1.jfif" alt="Member 1">
             </div>
             <h3>Mingkai</h3>
         </div>
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/nimb.jpg" alt="Member 1">
+                <img src="/css/assets/images/nimb.jpg" alt="Member 1">
             </div>
             <h3>Nimble</h3>
         </div>
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/7.jpg" alt="Member 1">
+                <img src="/css/assets/images/7.jpg" alt="Member 1">
             </div>
             <h3>Sevenleven</h3>
         </div>
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/potpot1.jfif" alt="Member 2">
+                <img src="/css/assets/images/potpot1.jfif" alt="Member 2">
             </div>
             <h3>Potpot</h3>
         </div>
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/ruff0.jpg" alt="Member 3">
+                <img src="/css/assets/images/ruff0.jpg" alt="Member 3">
             </div>
             <h3>Ruff</h3>
         </div>
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/luna1.jfif" alt="Member 4">
+                <img src="/css/assets/images/luna1.jfif" alt="Member 4">
             </div>
             <h3>Luna</h3>
         </div>
         <div class="profile-card">
             <div class="image-container">
-                <img src="/css/assets/cindy0.jpg" alt="Member 5">
+                <img src="/css/assets/images/cindy0.jpg" alt="Member 5">
             </div>
             <h3>Cindy</h3>
         </div>
+    </div>
+</section>
+
+<section id="about-myself">
+    <div class="about-container">
+        <h2>About Mingkai</h2>
+        <p>Hi, I’m Mingkai! I’m a sun-loving kitty who enjoys lounging around and soaking up the rays. I’m not a fan of baths, but don’t worry—I’m not stinky! I absolutely love to eat fish and chicken, and my favorite cat food is Princess. I get a kick out of midnight zoomies and really love the toy Sarah made for me—a stick with a plastic end. I also love bringing Sarah little gifts. I’m 5 years old, born on October 30, 2019. <br> Paws and purrs make life purrfect!</p>
     </div>
 </section>
 
@@ -82,32 +90,56 @@
         <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
         <div class="carousel-slide">
             <div class="carousel-content">
-                <img src="/css/assets/mkbby0.jpg" alt="Slide 1">
+                <img src="/css/assets/images/mkbby0.jpg" alt="Slide 1">
                 <p><b>˚ʚ♡ɞ˚ Baby Mingkai (2019) ˚ʚ♡ɞ˚: </b><br> A Glimpse into Her Early Years</p>
             </div>
             <div class="carousel-content">
-                <img src="/css/assets/mkdrama.jfif" alt="Slide 2">
+                <img src="/css/assets/images/mkdrama.jfif" alt="Slide 2">
                 <p><b> ˚ʚ♡ɞ˚ Mingkai watching kdrama ˚ʚ♡ɞ˚ </b></p> 
             </div>
             <div class="carousel-content">
-                <img src="/css/assets/bg.jfif" alt="Slide 3">
+                <img src="/css/assets/images/bg.jfif" alt="Slide 3">
                 <p><b>Spay Day ˚ʚ♡ɞ˚:</b> <br> April 05 2024: Spay Neuter Project</p>
             </div>
             <div class="carousel-content">
-                <img src="/css/assets/mkpotpot1.jfif" alt="Slide 4">
+                <img src="/css/assets/images/mkpotpot1.jfif" alt="Slide 4">
                 <p><b>Mingkai with Potpot˚ʚ♡ɞ˚:</b> <br>A tender moment between mother and son.</p>
             </div>
             <div class="carousel-content">
-                <img src="/css/assets/cindymk.jfif" alt="Slide 5">
+                <img src="/css/assets/images/cindymk.jfif" alt="Slide 5">
                 <p><b>Mingkai with Cindy ˚ʚ♡ɞ˚:</b> <br>Sharing love and happiness in every cuddle. </p>
             </div>
             <div class="carousel-content">
-                <img src="/css/assets/sevmk.jfif" alt="Slide 5">
+                <img src="/css/assets/images/sevmk.jfif" alt="Slide 6">
                 <p><b>Mingkai with Sevenleven ˚ʚ♡ɞ˚:</b> <br>Sissy </p>
             </div>
             <div class="carousel-content">
-                <img src="/css/assets/mingkaiwithsnoopy.jpg" alt="Slide 5"> 
+                <img src="/css/assets/images/mingkaiwithsnoopy.jpg" alt="Slide 7"> 
                 <p><b>Mingkai with Snoopy ˚ʚ♡ɞ˚:</b> <br>Nap time buddies </p>
+            </div>
+            <div class="carousel-content">
+                <img src="/css/assets/images/sleep.jfif" alt="Slide 8"> 
+                <p><b> Sleepy ˚ʚ♡ɞ˚</b> </p>
+            </div>
+            <div class="carousel-content">
+                <img src="/css/assets/images/sleep1.jfif" alt="Slide 9"> 
+                <p><b>Sleepy ˚ʚ♡ɞ˚</b> </p>
+            </div>
+            <div class="carousel-content">
+                <img src="/css/assets/images/sleep2.jfif" alt="Slide 9"> 
+                <p><b>Sleepy ˚ʚ♡ɞ˚</b> </p>
+            </div>
+            <div class="carousel-content">
+                <img src="/css/assets/images/sleep4.jfif" alt="Slide 9"> 
+                <p><b>Sleepy ˚ʚ♡ɞ˚</b> </p>
+            </div>
+            <div class="carousel-content">
+                <img src="/css/assets/images/sleep5.jfif" alt="Slide 9"> 
+                <p><b>Sleepy ˚ʚ♡ɞ˚</b> </p>
+            </div>
+            <div class="carousel-content">
+                <img src="/css/assets/images/qt.jfif" alt="Slide 9"> 
+                <p><b>Peakabooo ˚ʚ♡ɞ˚</b> </p>
             </div>
             <!-- Add more slides as needed -->
         </div>
@@ -136,6 +168,15 @@
         }
         slides[slideIndex].style.display = "block";
     }
+</script>
+
+<audio id="background-music" src="/css/assets/audio/Cats_sped_up.mp3" preload="auto" loop></audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    });
 </script>
 
 </body>

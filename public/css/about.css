@@ -1,3 +1,33 @@
+.about-container {
+    background: linear-gradient(135deg, #ffe6f3, #fffbc5);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+}
+
+.about-container h2 {
+    color: #d13469;
+    font-family: 'Baloo 2', cursive;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    color: #6b0024;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.1em;
+}
+
+.about-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 h3{
     font-size: 12px;
     color: #e65f8c;
@@ -59,7 +89,7 @@ header nav ul {
 }
 
 #hero {
-    background-image: url('/css/assets/bg01.png');
+    background-image: url('/css/assets/images/bg01.png');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -147,7 +177,7 @@ footer {
 #carousel {
     padding: 30px;
     background: linear-gradient(135deg,#ffe6f3, #ff9fbf, #add8e6);
-    background-image: url('/css/assets/bgqt.jpg');
+    background-image: url('/css/assets/images/bgqt.jpg');
 }
  
 .carousel-container {
