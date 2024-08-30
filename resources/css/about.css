@@ -1,0 +1,91 @@
+/* Basic styles for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #e00000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* Content styling */
+.content {
+    padding: 20px;
+    background: #fff;
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    width: 80%; /* Adjusted width */
+    max-width: 600px; /* Adjusted max-width */
+    height: auto; /* Allow height to adjust based on image aspect ratio */
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    min-width: 100%;
+    height: 50%; /* Ensure aspect ratio is maintained */
+    object-fit: contain; /* Adjust to ensure full image is visible */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
