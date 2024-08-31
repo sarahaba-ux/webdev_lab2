@@ -18,6 +18,7 @@
             <li><a href="{{ route('homepage') }}" class="button">Home</a></li>
             <li><a href="{{ route('about') }}" class="button">About</a></li>
             <li><a href="{{ route('content') }}" class="button">Content</a></li>
+            <li><a href="{{ route('contact') }}" class="button">Contact</a></li>
         </ul>
     </nav>
     
