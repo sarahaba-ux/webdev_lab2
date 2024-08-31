@@ -23,6 +23,10 @@
     </nav>
 </header>
 
+<div class="welcome-message">
+        <h1>{{ $message }}</h1>
+    </div>
+
 <section id="image-section">
     <div class="image-container left" style="color: #6b0024;">
         <img src="/css/assets/images/homepg.png" alt="Left Image">

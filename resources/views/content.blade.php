@@ -20,6 +20,7 @@
             <li><a href="{{ route('content') }}" class="button">Content</a></li>
         </ul>
     </nav>
+    
 </header>
 
 <div class="journal-container">

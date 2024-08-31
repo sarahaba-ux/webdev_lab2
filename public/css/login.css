@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #fffbc5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+/* Login Form Container */
+.login-container {
+    background-color: #ffe6f3;
+    border-radius: 15px;
+    width: 300px;
+    padding: 40px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #d13469;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    color: #6b0024;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #d13469;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d13469;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #6b0024;
+}
+
+/* Redirect Button */
+.redirect-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redirect-container button {
+    padding: 10px 20px;
+    background-color: #d13469;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.redirect-container button:hover {
+    background-color: #6b0024;
+}
