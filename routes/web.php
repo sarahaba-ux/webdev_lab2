@@ -8,16 +8,9 @@ use Illuminate\Support\Facades\Mail;
 
 // Route for showing the homepage (handled by the controller)
 Route::get('/', [LoginController::class, 'homepage'])->name('homepage');
-
-// Route for about page
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
-// Route for content page
-Route::get('/content', function () {
-    return view('content');
-})->name('content');
+Route::get('/about', [LoginController::class, 'about'])->name('about');
+Route::get('/content', [LoginController::class, 'content'])->name('content');
+Route::get('/contact', [LoginController::class, 'contact'])->name('contact');
 
 // Route for showing the login form
 Route::get('/login', function () {
@@ -27,10 +20,6 @@ Route::get('/login', function () {
 // Route for handling the login form submission
 Route::post('/login', [LoginController::class, 'login']);
 
-// Route for contact page
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
 
 Route::post('/contact', function () {
     $data = request()->all();

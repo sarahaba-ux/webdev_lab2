@@ -24,6 +24,8 @@
     
 </header>
 
+<h1>{{ $message }}</h1>
+
 <section id="hero">
     <div class="hero-content">
        <br><br>

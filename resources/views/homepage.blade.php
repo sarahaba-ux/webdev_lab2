@@ -7,6 +7,7 @@
     <!-- Add Google Font link here -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/home.css">
+    
 </head>
 <body>
 

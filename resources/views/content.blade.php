@@ -20,9 +20,10 @@
             <li><a href="{{ route('content') }}" class="button">Content</a></li>
             <li><a href="{{ route('contact') }}" class="button">Contact</a></li>
         </ul>
-    </nav>
-    
+    </nav> 
 </header>
+
+<h1>{{ $message }}</h1>
 
 <div class="journal-container">
     <h1 style="color: #e65f8c;"> ˚ʚ♡ɞ˚ </h1>

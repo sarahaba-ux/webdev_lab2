@@ -27,8 +27,6 @@
     <input type="text" id="username" name="username">
     <button type="submit">Login</button>
 </form>
-
-
 </div>
 
 </body>

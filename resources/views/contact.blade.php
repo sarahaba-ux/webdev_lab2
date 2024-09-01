@@ -28,6 +28,8 @@
         </header>
          <!-- END OF HEADER -->
 
+<h1>{{ $message }}</h1>
+
          <!--SECTION OF FORM  -->
 
          @if(session('flash')) 

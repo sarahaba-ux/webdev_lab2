@@ -156,3 +156,21 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+header .button {
+    /* Existing button styles */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Adjust as needed */
+}
+
+header .button i {
+    margin-left: 8px;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+/* Example of hover effect */
+header .button:hover {
+    color: #d13469; /* Change color on hover */
+}
