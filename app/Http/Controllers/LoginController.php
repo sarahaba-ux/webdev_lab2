@@ -14,8 +14,11 @@ class LoginController extends Controller
         ]);
 
         // Get the username from the request, default to 'guest' if not provided
-        $username = $request->input('username', 'guest');
-
+        $username = $request->input('username');
+        if (empty($username)) {
+            $username = 'guest'; // Default to 'guest' if username is empty
+        }
+        
         // Store the username in the session
         $request->session()->put('username', $username);
 

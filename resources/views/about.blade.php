@@ -15,10 +15,10 @@
     </div>
     <nav>
         <ul>
-            <li><a href="{{ route('homepage') }}" class="button">Home</a></li>
-            <li><a href="{{ route('about') }}" class="button">About</a></li>
-            <li><a href="{{ route('content') }}" class="button">Content</a></li>
-            <li><a href="{{ route('contact') }}" class="button">Contact</a></li>
+        <li><a href="{{ route('homepage', ['username' => request('username', 'guest')]) }}" class="button">Home</a></li>
+            <li><a href="{{ route('about', ['username' => request('username', 'guest')]) }}" class="button">About</a></li>
+            <li><a href="{{ route('content', ['username' => request('username', 'guest')]) }}" class="button">Content</a></li>
+            <li><a href="{{ route('contact', ['username' => request('username', 'guest')]) }}" class="button">Contact</a></li>
         </ul>
     </nav>
     
