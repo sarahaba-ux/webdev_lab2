@@ -24,7 +24,7 @@ class LoginController extends Controller
 public function homepage(Request $request)
 {
     // Retrieve the username from the query parameters
-    $username = $request->query('username', 'user'); // 'user' is the default if no username is provided
+    $username = $request->query('username', 'guest'); // 'guest' is the default if no username is provided
     
     // Pass the username to the homepage view
     return view('homepage', ['message' => "Welcome, $username!"]);
