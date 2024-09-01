@@ -1,62 +1,66 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
+    private function getUsername(Request $request)
+    {
+        // Retrieve the username from the session, default to 'guest' if not set or empty
+        return $request->session()->get('username', 'guest') ?: 'guest';
+    }
+
     public function login(Request $request)
-{
-    // Validate the request (allowing optional username)
-    $request->validate([
-        'username' => 'nullable|alpha',
-    ]);
+    {
+        // Validate the request (allowing optional username)
+        $request->validate([
+            'username' => 'nullable|alpha',
+        ]);
 
-    // Get the username from the request
-    $username = $request->input('username', 'guest'); // Default to 'guest' if no username provided
-    
-    // Store the username in the session
-    $request->session()->put('username', $username);
+        // Get the username from the request, and default to 'guest' if it's empty
+        $username = $request->input('username', 'guest');
 
-    // Redirect to the homepage
-    return redirect()->route('homepage');
-}
+        // Store the username in the session
+        $request->session()->put('username', $username);
 
-public function homepage(Request $request)
-{
-    // Retrieve the username from the session, default to 'guest' if not set
-    $username = $request->session()->get('username', 'guest');
+        // Redirect to the homepage
+        return redirect()->route('homepage');
+    }
 
-    // Pass the username to the homepage view
-    return view('homepage', ['message' => "Welcome, $username!"]);
-}
+    public function homepage(Request $request)
+    {
+        // Get the username using the centralized method
+        $username = $this->getUsername($request);
 
-public function about(Request $request)
-{
-    // Retrieve the username from the session, default to 'guest' if not set
-    $username = $request->session()->get('username', 'guest');
+        // Pass the username to the homepage view
+        return view('homepage', ['message' => "Welcome, $username!"]);
+    }
 
-    // Pass the username to the about view
-    return view('about', ['message' => "Welcome, $username!"]);
-}
+    public function about(Request $request)
+    {
+        // Get the username using the centralized method
+        $username = $this->getUsername($request);
 
-public function content(Request $request)
-{
-    // Retrieve the username from the session, default to 'guest' if not set
-    $username = $request->session()->get('username', 'guest');
+        // Pass the username to the about view
+        return view('about', ['message' => "Welcome, $username!"]);
+    }
 
-    // Pass the username to the content view
-    return view('content', ['message' => "Welcome, $username!"]);
-}
+    public function content(Request $request)
+    {
+        // Get the username using the centralized method
+        $username = $this->getUsername($request);
 
-public function contact(Request $request)
-{
-    // Retrieve the username from the session, default to 'guest' if not set
-    $username = $request->session()->get('username', 'guest');
+        // Pass the username to the content view
+        return view('content', ['message' => "Welcome, $username!"]);
+    }
 
-    // Pass the username to the contact view
-    return view('contact', ['message' => "Welcome, $username!"]);
-}
+    public function contact(Request $request)
+    {
+        // Get the username using the centralized method
+        $username = $this->getUsername($request);
 
+        // Pass the username to the contact view
+        return view('contact', ['message' => "Welcome, $username!"]);
+    }
 }
