@@ -16,21 +16,22 @@ body {
     min-height: 100vh;
 }
 
+/* Style for the header */
 header {
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     background-color: #ff9fbf;
-    color: #fff;
     padding: 5px 10px;
     width: 100%;
     box-sizing: border-box;
+    color: #fff;
 }
 
 header .logo img {
     height: 90px;
     margin-left: 5px;
-    margin-right: 394px;
+    margin-right: 340px;
     margin-bottom: -10px;
     margin-top: -15px;
 }
@@ -83,10 +84,6 @@ header nav ul li a:active {
     box-shadow: 0px 30px 25px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-}
-
-h1 {
-    color: #333;
 }
 
 #scenario {
@@ -189,7 +186,6 @@ h1 {
     background-color: #333; 
 }
 
-
 #entry-left, #entry-right {
     text-align: left;
     font-family: 'Georgia', serif; 
@@ -242,11 +238,10 @@ footer {
 }
 
 header .button {
-    /* Existing button styles */
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #000; /* Adjust as needed */
+    color: #ffffff; /* Adjust as needed */
 }
 
 header .button i {
@@ -257,5 +252,25 @@ header .button i {
 /* Example of hover effect */
 header .button:hover {
     color: #d13469; /* Change color on hover */
+}
+
+/* Ensure that the cute font is applied */
+.cute-font {
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    font-size: 12px; /* Adjust as needed */
+    text-align: right; /* Align text to the right */
+    margin-left: 300px; /* Adjust margin as needed */
+    color: #d13469; /* Color for the welcome message */
+    font-family: 'Baloo 2', cursive; /* Ensure the cute font is applied */
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin: 0;
 }
 

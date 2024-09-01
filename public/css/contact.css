@@ -21,7 +21,7 @@ header {
 
 header .logo img {
     height: 90px; /* Smaller logo */
-    margin-right: 390px;
+    margin-right: 340px;
     margin-bottom: -10px;
     margin-top: -15px;
 }
@@ -188,7 +188,7 @@ header .button {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #000; /* Adjust as needed */
+  color: #ffffff; /* Adjust as needed */
 }
 
 header .button i {
@@ -199,4 +199,22 @@ header .button i {
 /* Example of hover effect */
 header .button:hover {
   color: #d13469; /* Change color on hover */
+}
+
+/* Ensure that the cute font is applied */
+.cute-font {
+  font-family: 'Baloo 2', cursive;
+}
+/* Style for the welcome message */
+.welcome-message {
+  font-size: 12px; /* Default font size, adjust as needed */
+  text-align: right; /* Align text to the right */
+  margin-left: 300px;
+  color: #d13469; /* Color, adjust as needed */
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+  font-size: 1.2em; /* Smaller font size for the heading */
+  margin: 0;
 }

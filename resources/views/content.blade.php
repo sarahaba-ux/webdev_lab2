@@ -21,9 +21,13 @@
             <li><a href="{{ route('contact', ['username' => request('username', 'guest')]) }}" class="button">Contact</a></li>
         </ul>
     </nav> 
+
+<div class="welcome-message">
+    <h1>{{ $message }}</h1>
+</div>
+
 </header>
 
-<h1>{{ $message }}</h1>
 
 <div class="journal-container">
     <h1 style="color: #e65f8c;"> ˚ʚ♡ɞ˚ </h1>

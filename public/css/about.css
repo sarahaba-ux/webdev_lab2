@@ -51,7 +51,7 @@ header {
 
 header .logo img {
     height: 90px; /* Smaller logo */
-    margin-right: 350px;
+    margin-right: 300px;
     margin-bottom: -10px;
     margin-top: -15px;
 }
@@ -245,12 +245,11 @@ footer {
     background-color: rgba(107, 0, 45, 0.7);
 }
 
-header .button {
-    /* Existing button styles */
+header .button { /* Existing button styles */
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #000; /* Adjust as needed */
+    color: #ffffff; /* Adjust as needed */
 }
 
 header .button i {
@@ -258,7 +257,24 @@ header .button i {
     font-size: 16px; /* Adjust size as needed */
 }
 
-/* Example of hover effect */
-header .button:hover {
+header .button:hover { /* Example of hover effect */
     color: #d13469; /* Change color on hover */
+}
+
+.cute-font { /* Ensure that the cute font is applied */
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    font-size: 12px; /* Default font size, adjust as needed */
+    text-align: right; /* Align text to the right */
+    margin-left: 300px;
+    color: #d13469; /* Color, adjust as needed */
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+    font-size: 1.2em; /* Smaller font size for the heading */
+    margin: 0;
 }

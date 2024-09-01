@@ -21,7 +21,7 @@ header {
 
 header .logo img {
     height: 90px; /* Smaller logo */
-    margin-right: 390px;
+    margin-right: 340px;
     margin-bottom: -10px;
     margin-top: -15px;
 }
@@ -117,7 +117,6 @@ header nav ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-
 /* Grid Container */
 .grid-container {
     display: grid;
@@ -162,7 +161,7 @@ header .button {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #000; /* Adjust as needed */
+    color: #ffffff; /* Adjust as needed */
 }
 
 header .button i {
@@ -173,4 +172,18 @@ header .button i {
 /* Example of hover effect */
 header .button:hover {
     color: #d13469; /* Change color on hover */
+}
+
+.welcome-message {
+    text-align: center; /* Center the text horizontally */
+    margin: 20px auto; /* Add vertical spacing and center the block */
+    padding: 15px; /* Add padding around the content */
+}
+
+/* Additional styling for the heading in the welcome message */
+.welcome-message h1 {
+    font-size: 2em; /* Adjust font size */
+    color: #d13469; /* Apply a color */
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Add padding */
 }

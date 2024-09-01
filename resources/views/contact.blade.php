@@ -25,10 +25,11 @@
             <li><a href="{{ route('contact', ['username' => request('username', 'guest')]) }}" class="button">Contact</a></li>
                 </ul>
             </nav>
+            <div class="welcome-message">
+        <h1>{{ $message }}</h1>
+    </div>
         </header>
          <!-- END OF HEADER -->
-
-<h1>{{ $message }}</h1>
 
          <!--SECTION OF FORM  -->
 
