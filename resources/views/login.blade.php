@@ -22,14 +22,15 @@
     <h2>Login</h2>
     
     <form action="{{ route('login') }}" method="POST">
-    @csrf
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
-    <button type="submit">Login</button>
-</form>
+        @csrf
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" 
+               pattern="[A-Za-z]*" 
+               title="Only alphabetic characters (a-z, A-Z) are allowed." 
+               placeholder="Enter username (optional)">
+        <button type="submit">Login</button>
+    </form>
 </div>
 
 </body>
 </html>
-
-
