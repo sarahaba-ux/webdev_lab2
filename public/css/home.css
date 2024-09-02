@@ -174,16 +174,16 @@ header .button:hover {
     color: #d13469; /* Change color on hover */
 }
 
+/* Welcome Message */
 .welcome-message {
-    text-align: center; /* Center the text horizontally */
-    margin: 20px auto; /* Add vertical spacing and center the block */
-    padding: 15px; /* Add padding around the content */
-}
-
-/* Additional styling for the heading in the welcome message */
-.welcome-message h1 {
-    font-size: 2em; /* Adjust font size */
-    color: #d13469; /* Apply a color */
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Add padding */
+    margin-right: 500px; 
+    margin-left: 500px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffe6f3; 
+    color: #d470a4; 
+    padding: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
+    border-radius: 10px;
 }
