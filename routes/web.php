@@ -12,6 +12,9 @@ Route::get('/content/{username?}', [LoginController::class, 'content'])->name('c
 Route::get('/contact/{username?}', [LoginController::class, 'contact'])->name('contact');
 Route::get('/user/{username?}', [LoginController::class, 'userProfile'])->name('user.profile');
 
+// Redirect /home to /
+Route::redirect('/home', '/');
+
 // Login route
 Route::get('/login', function () {
     return view('login');
