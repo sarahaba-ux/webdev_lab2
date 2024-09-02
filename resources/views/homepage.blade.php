@@ -21,6 +21,7 @@
             <li><a href="{{ route('about', ['username' => request('username', 'guest')]) }}" class="button">About</a></li>
             <li><a href="{{ route('content', ['username' => request('username', 'guest')]) }}" class="button">Content</a></li>
             <li><a href="{{ route('contact', ['username' => request('username', 'guest')]) }}" class="button">Contact</a></li>
+            <li><a href="{{ route('login', ['username' => request('username', 'guest')]) }}" class="button">Login</a></li>
         </ul>
     </nav>
 </header>
