@@ -30,7 +30,7 @@
                     <div class="cat-holder">
                         <img src="/css/assets/images/kit.png" alt="Cat holding the login container" class="cat-image">
                     </div>
-                    <h2>Login</h2>
+                    <h2>Mingkai Access</h2>
             
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
@@ -39,7 +39,7 @@
                             pattern="[A-Za-z]*" 
                             title="Only alphabetic characters (a-z, A-Z) are allowed." 
                             placeholder="Enter username (optional)">
-                            <button type="submit">Login</button>
+                            <button type="submit">Please Access</button>
                     </form>
                 <!-- End of Login Form Container -->
                 </div>
